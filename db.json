@@ -1,0 +1,77 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "BALENCIAGA LARGE CARGO PANTS IN BLACK",
+      "category": "MEN",
+      "price": 5999,
+      "image": "/images/1.jpg",
+      "description": "Light cotton ripstop. This item is unisex. Mid-waist. Covered zip fly. 5 belt loops. Drawstring waist. 2 slash pockets at front. 2 welt pockets at front. 6 cargo pockets : 4 front, 2 side. 2 hook and loop flap pockets at back. 1 zip at knee to remove the bottom. Balenciaga logo embroidered tone-on-tone at front. Destroyed, washed-out and dirty effect. Made in Italy"
+    },
+    {
+      "id": "2",
+      "name": "MEN'S ARMY SMALL TOTE BAG IN BLACK",
+      "category": "ACCESSORIES",
+      "price": 8999,
+      "image": "/images/2.jpg",
+      "description": "Dimensions: L9 x H10,6 x W4,7 inch. Recycled nylon. Small tote bag. Two handles. Adjustable and removable strap (18,5 inch). Balenciaga logo patch at front. Tone-on-tone hardware. MOLLE loop system with one hook. Drawstring closure. Magnetic patch pocket on each side. Cotton canvas lining. Made in Italy"
+    },
+    {
+      "id": "3",
+      "name": "WOMEN'S NOLOGO LONG SLEEVE T-SHIRT FITTED IN LIGHT PINK",
+      "category": "WOMEN",
+      "price": 2999,
+      "image": "/images/3.jpg",
+      "description": "Peeling stretch jersey. This item is unisex. Crewneck. Long sleeves. Nologo artwork printed at front and on sleeves. Cracked effect artwork. Destroyed and washed-out effect. Made in Portugal"
+    },
+    {
+      "id": "4",
+      "name": "MEN'S 3XL SNEAKER IN BLACK",
+      "category": "SHOES",
+      "price": 6999,
+      "image": "/images/4.jpg",
+      "description": "Leather free. Sneaker. Mesh and polyurethane. Worn-out effect. Balenciaga logo at the edge of the toe and at back. Embossed size on the upper and at the back of the heel. 3XL rubber branding on the tongue with reflective detail. Back and tongue pull-on tab with reflective detail. Caution: extra laces are tied around the shoes for styling purpose and should be removed before use. Made in China"
+    },
+    {
+      "id": "5",
+      "name": "MEN'S POLITICAL STENCIL SHIRT LARGE FIT IN WHITE",
+      "category": "MEN",
+      "price": 3599,
+      "image": "/images/5.jpg",
+      "description": "Cotton poplin. Button-down collar. 7 button front. 1 patch pocket at chest. Long sleeves. Buttoned cuffs. Rounded hem. Balenciaga engraved buttons. Political stencil logo printed at back. Made in Italy"
+    },
+    {
+      "id": "6",
+      "name": "MEN'S HAWAIIAN CAR MINIMAL SHORT SLEEVE SHIRT LARGE FIT IN ORANGE",
+      "category": "NEW",
+      "price": 1999,
+      "image": "/images/6.jpg",
+      "description": "Hawaiian car printed viscose poplin. Shirt collar. 6 button front. 1 patch pocket at chest. Short sleeves. Rounded hem. Balenciaga engraved buttons. Made in Italy"
+    },
+    {
+      "id": "7",
+      "name": "MEN'S HARDCROCS MULE IN BLACK",
+      "category": [
+        "MEN",
+        "NEW",
+        "SHOES"
+      ],
+      "price": 4999,
+      "image": "/images/7.jpg",
+      "description": "Rubber. Mule. Round toe. 10mm arch. 110mm platform. Balenciaga logo debossed on strap. Balenciaga logo debossed on silver metal piece effect at front and back. BB logo engraved on studs. Tone-on-tone sole and insole. Made in China. Crocs™ collaboration"
+    },
+    {
+      "id": "8",
+      "name": "4G CAT SUNGLASSES IN PURPLE",
+      "category": [
+        "WOMEN",
+        "ACCESSORIES"
+      ],
+      "price": 299,
+      "image": "/images/8.jpg",
+      "description": "Temple length: 4,1 inch. Bridge length: 0,6 inch. Aluminum. Cat shape. Standard fit. Flexible hinges. Balenciaga logo engraved on the left temple. Lens material: Nylon. Lens category: 3. 100% UVA/UVB protection. Not suitable for optical conversion. Made in Japan. BB0349S"
+    }
+  ],
+  "favorites": [],
+  "cart": []
+}

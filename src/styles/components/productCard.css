@@ -1,0 +1,58 @@
+@font-face {
+  font-family: Helvetica;
+  src: url("../../Font/Helvetica\ Neue\ Medium\ Extended.otf");
+}
+
+@font-face {
+  font-family: Helvetica Wei;
+  src: url("../../Font/Helvetica\ Neue\ LTW0697BlkCnObl.otf");
+}
+
+@font-face {
+  font-family: Helvetica Light;
+  src: url("../../Font/Helvetica\ Neue\ UltraLight.otf");
+}
+.product-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 35rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .product-card img {
+    max-width: 65%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
+  
+  .special-card {
+    padding: 8%;
+    text-align: center;
+    background-color: #fff;
+    width: 35rem;
+  }
+
+  .product-card h3 {
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-card p {
+    font-size: 20px;
+    font-family: Helvetica Wei, sans-serif;
+    margin-bottom: 1rem;
+  }
+  
+  .product-card button {
+    font-family: Helvetica Light, sans-serif;
+    font-weight: 900;
+    margin: 2px;
+  }
+  
+
+  
+  
+ 

@@ -33,18 +33,18 @@ const OrderPage = () => {
   const onRecaptchaChange = (value) => {
     setIsVerified(!!value);
   };
-
+  
   return (
     <div className="order-page">
-       <script src="https://www.google.com/recaptcha/api.js"></script>
-      
+      <script src="https://www.google.com/recaptcha/api.js"></script>
+
       <form id="idform" ref={form} onSubmit={handleSubmit(onSubmit)}>
-        <input {...register("fullName", { required: true })} placeholder="Full Name" />
+        <input {...register("fullName", { required: true })} placeholder="Full Name"/>
         {errors.fullName && <h5>Full name required</h5>}
-        
-        <input {...register("address", { required: true })} placeholder="Email" />
+
+        <input {...register("address", { required: true })} placeholder="Email"/>
         {errors.address && <h5>Email required</h5>}
-        
+
         <select {...register("paymentMethod", { required: true })}>
           <option value="">Choose a payment method</option>
           <option value="creditCard">Credit card</option>
@@ -52,12 +52,12 @@ const OrderPage = () => {
           <option value="cash">Cash</option>
         </select>
         {errors.paymentMethod && <h5>Choice of payment method is required</h5>}
-        
-        <ReCAPTCHA
-          sitekey="6LcEj_gpAAAAAFaM1usgqbZ411IXoxCzxXeeG54K"
-          onChange={onRecaptchaChange}
-        />
-        <button type="submit">Order</button>
+
+          <ReCAPTCHA
+            sitekey="6Ld4UvgpAAAAAM2vB7jnfVX_pu08ACOSokBww7Hs"
+            onChange={onRecaptchaChange}
+          />
+        <button type="submit" disabled={!isVerified}>Order</button>
       </form>
     </div>
   );

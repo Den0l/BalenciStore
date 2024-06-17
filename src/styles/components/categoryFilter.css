@@ -1,17 +1,27 @@
 .category-filter {
-    margin-bottom: 1rem;
-  }
-  
-  .category-filter button {
-    background-color: #fff;
-    color: #000000;
-    border: 1px solid #ddd;
-    padding: 0.5rem 1rem;
-    margin: 0.25rem;
-    cursor: pointer;
-  }
-  
-  .category-filter button:hover {
-    background-color: #f4f4f4;
-  }
-  
+  margin-bottom: 1rem;
+}
+
+.all-button {
+  background-color: #000;
+  color: #fff;
+}
+
+.abutton {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ddd;
+  padding: 0.5rem 1rem;
+  margin: 0.25rem;
+  cursor: pointer;
+}
+
+.all-button:hover {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.abutton:hover {
+  background-color: #757575;
+}

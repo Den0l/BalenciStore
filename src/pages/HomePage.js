@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import ProductCard from '../componetns/ProductCard';
 import '../styles/Pages/homePage.css';
+import { motion } from 'framer-motion';
 
 const HomePage = () => {
   const [products, setProducts] = useState([]);
@@ -16,17 +17,28 @@ const HomePage = () => {
 
   return (
     <div className="home-page">
+        <motion.div
+        initial={{ opacity: 0 }}         
+        animate={{ opacity: 1 }}         
+        transition={{ duration: 0.8 }}>
       <div className="product-list">
         <div className="product-card special-card">
-          <p>Balenciaga — дом моды, основанный в 1919 году испанским дизайнером Кристобалем Баленсиагой в Сан-Себастьяне и в настоящее время базирующийся в Париже. Balenciaga закрылся в 1968 году и вновь открылся под управлением нового владельца в 1986 году. Ныне дом Balenciaga принадлежит французской модной группе Kering.</p>
+          <p>Balenciaga was a fashion house founded in 1919 by Spanish designer Cristóbal Balenciaga in San Sebastián and now based in Paris. Balenciaga closed in 1968 and reopened under a new owner in 1986. Balenciaga is now owned by the French fashion group Kering. Balenciaga's fashion shows showcase experimental clothing along with the excellent message on which the show is based.</p>
           <Link to="/contact">
-            <button>Связаться с нами</button>
+            <button>Contact us</button>
           </Link>
         </div>
         {products.slice(0, 10).map(product => (
+          <motion.div
+          key={product.id}
+          initial={{ opacity: 0 }}         
+          animate={{ opacity: 1 }}         
+          transition={{ duration: 0.8 }}>
           <ProductCard key={product.id} product={product} />
+          </motion.div>
         ))}
       </div>
+          </motion.div>
     </div>
   );
 };

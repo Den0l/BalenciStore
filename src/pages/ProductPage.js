@@ -1,15 +1,26 @@
-import React, { useState, useEffect, useContext} from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import { CartContext } from '../contexts/CartContext';
+import { motion } from 'framer-motion';
 import { FavoritesContext } from '../contexts/FavoriteContext';
 import '../styles/Pages/productPage.css';
-
 
 const ProductPage = () => {
   const { id } = useParams();
   const [product, setProduct] = useState(null);
 
   const { cart, addToCart, removeFromCart } = useContext(CartContext);
+
+  const { favorites, addToFavorites, removeFromFavorites } = useContext(FavoritesContext);
+
+  useEffect(() => {
+    fetch(`http://localhost:3001/products/${id}`)
+      .then(response => response.json())
+      .then(data => setProduct(data))
+      .catch(error => console.error('Error fetching product:', error));
+  }, [id]);
+
+  if (!product) return <div>Loading...</div>;
 
   const isInCart = cart.some(cartItem => cartItem.id === product.id);
 
@@ -21,8 +32,6 @@ const ProductPage = () => {
     }
   };
 
-  const { favorites, addToFavorites, removeFromFavorites } = useContext(FavoritesContext);
-
   const isFavorite = favorites.some(favorite => favorite.id === product.id);
 
   const handleFavoriteClick = () => {
@@ -32,14 +41,6 @@ const ProductPage = () => {
       addToFavorites(product);
     }
   };
-
-  useEffect(() => {
-    fetch(`http://localhost:3001/products/${id}`)
-      .then(response => response.json())
-      .then(data => setProduct(data));
-  }, [id]);
-
-  if (!product) return <div>Loading...</div>;
 
   const formattedDescription = product.description.split('.').map((sentence, index) => (
     <p key={index}>{sentence.trim()}.</p>
